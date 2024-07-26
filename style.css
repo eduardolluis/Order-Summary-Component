@@ -102,6 +102,7 @@ p {
     cursor: pointer;
     text-decoration: underline;
     margin-left: auto; 
+    font-weight: bold;
 }
 
 .change:hover {
