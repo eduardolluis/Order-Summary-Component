@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('pattern-background-desktop.svg');
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#container {
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+h3 {
+    color: var(--Dark-blue);
+    margin: 26px 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 15px;
+    color: var(--Desaturated-blue);
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+#plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 43px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+}
+
+.mensuality {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 15px;
+    color: var(--Desaturated-blue);   
+    text-align: left;
+}
+
+.change {
+    font-size: 16px;
+    color: var(--Bright-blue);
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: auto; 
+}
+
+.change:hover {
+    color: darken(var(--Bright-blue), 10%);
+}
+
+button {
+    background-color: var(--Bright-blue);
+    color: #fff;
+    width: 80%;
+    padding: 13px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+span {
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+span:hover {
+    color: #000;
+    font-weight: bold;
+}
